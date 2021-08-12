@@ -16,6 +16,6 @@ app.get("/api/pokemon/:pokemonName", (req, res) => {
   res.json(pokemon[pokemonName]);
 });
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
   console.log(`Server is listening on ${PORT}`);
 });
