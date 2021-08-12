@@ -9,7 +9,7 @@ app.use(cors());
 const PORT = 5000;
 
 app.get("/", (req, res) => {
-  res.sendFile("./index.html");
+  res.sendFile(__dirname + "/index.html");
 });
 
 app.get("/api/pokemon/:pokemonName", (req, res) => {
