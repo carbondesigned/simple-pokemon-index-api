@@ -9,7 +9,7 @@ app.use(cors());
 const PORT = 5000;
 
 app.get("/", (res, req) => {
-  res.send("Hello");
+  res.json(pokemon);
 });
 
 app.get("/api/pokemon/:pokemonName", (req, res) => {
