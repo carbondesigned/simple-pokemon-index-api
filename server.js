@@ -8,7 +8,7 @@ const app = express();
 app.use(cors());
 const PORT = 5000;
 
-app.get("/", (res, req) => {
+app.get("/", (req, res) => {
   res.sendFile("./index.html");
 });
 
