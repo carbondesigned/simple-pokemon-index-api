@@ -8,6 +8,10 @@ const app = express();
 app.use(cors());
 const PORT = 5000;
 
+app.get("/", (res, req) => {
+  app.send("Hello");
+});
+
 app.get("/api/pokemon/:pokemonName", (req, res) => {
   const pokemonName = req.params.pokemonName.toLowerCase();
 
